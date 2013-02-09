@@ -1,0 +1,11 @@
+﻿Build started 2013/2/9 18:10:06.
+     1>Project "F:\cocos2d-2.0-x-2.0.3\DemoGame\proj.win32\DemoGame.win32.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I. /I..\Classes /I"F:\cocos2d-2.0-x-2.0.3\cocos2dx" /I"F:\cocos2d-2.0-x-2.0.3\cocos2dx\include" /I"F:\cocos2d-2.0-x-2.0.3\cocos2dx\kazmath\include" /I"F:\cocos2d-2.0-x-2.0.3\cocos2dx\platform\win32" /I"F:\cocos2d-2.0-x-2.0.3\cocos2dx\platform\third_party\win32" /I"F:\cocos2d-2.0-x-2.0.3\cocos2dx\platform\third_party\win32\OGLES" /I"F:\cocos2d-2.0-x-2.0.3\CocosDenshion\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D STRICT /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS_DEBUG /D COCOS2D_DEBUG=1 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc110.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt GameManager.cpp
+         GameManager.cpp
+     1>f:\cocos2d-2.0-x-2.0.3\demogame\proj.win32\gamemanager.cpp(68): error C2243: 'type cast' : conversion from 'GameScene *' to 'cocos2d::CCScene *' exists, but is inaccessible
+     1>Done Building Project "F:\cocos2d-2.0-x-2.0.3\DemoGame\proj.win32\DemoGame.win32.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.40
