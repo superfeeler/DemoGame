@@ -4,6 +4,7 @@
 #include "SimpleMoveController.h"
 
 
+
 Bullet::Bullet(void)
 {
 
