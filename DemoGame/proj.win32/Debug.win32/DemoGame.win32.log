@@ -1,11 +1,43 @@
-﻿Build started 2013/2/9 18:10:06.
+﻿Build started 2013/3/14 14:34:44.
      1>Project "F:\cocos2d-2.0-x-2.0.3\DemoGame\proj.win32\DemoGame.win32.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I. /I..\Classes /I"F:\cocos2d-2.0-x-2.0.3\cocos2dx" /I"F:\cocos2d-2.0-x-2.0.3\cocos2dx\include" /I"F:\cocos2d-2.0-x-2.0.3\cocos2dx\kazmath\include" /I"F:\cocos2d-2.0-x-2.0.3\cocos2dx\platform\win32" /I"F:\cocos2d-2.0-x-2.0.3\cocos2dx\platform\third_party\win32" /I"F:\cocos2d-2.0-x-2.0.3\cocos2dx\platform\third_party\win32\OGLES" /I"F:\cocos2d-2.0-x-2.0.3\CocosDenshion\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D STRICT /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS_DEBUG /D COCOS2D_DEBUG=1 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc110.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt GameManager.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I. /I..\Classes /I"F:\cocos2d-2.0-x-2.0.3\cocos2dx" /I"F:\cocos2d-2.0-x-2.0.3\cocos2dx\include" /I"F:\cocos2d-2.0-x-2.0.3\cocos2dx\kazmath\include" /I"F:\cocos2d-2.0-x-2.0.3\cocos2dx\platform\win32" /I"F:\cocos2d-2.0-x-2.0.3\cocos2dx\platform\third_party\win32" /I"F:\cocos2d-2.0-x-2.0.3\cocos2dx\platform\third_party\win32\OGLES" /I"F:\cocos2d-2.0-x-2.0.3\CocosDenshion\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D STRICT /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS_DEBUG /D COCOS2D_DEBUG=1 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc110.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt GameManager.cpp GameMenu.cpp
+         GameMenu.cpp
+     1>f:\cocos2d-2.0-x-2.0.3\demogame\proj.win32\gamemenu.cpp(34): warning C4305: 'argument' : truncation from 'double' to 'float'
+         Generating Code...
+         Compiling...
          GameManager.cpp
-     1>f:\cocos2d-2.0-x-2.0.3\demogame\proj.win32\gamemanager.cpp(68): error C2243: 'type cast' : conversion from 'GameScene *' to 'cocos2d::CCScene *' exists, but is inaccessible
-     1>Done Building Project "F:\cocos2d-2.0-x-2.0.3\DemoGame\proj.win32\DemoGame.win32.vcxproj" (Build target(s)) -- FAILED.
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\cocos2d-2.0-x-2.0.3\Debug.win32\DemoGame.win32.exe" /INCREMENTAL /NOLOGO /LIBPATH:"F:\cocos2d-2.0-x-2.0.3\Debug.win32\\" libcocos2d.lib libExtensions.lib opengl32.lib glew32.lib libCocosDenshion.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\cocos2d-2.0-x-2.0.3\Debug.win32\DemoGame.win32.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\cocos2d-2.0-x-2.0.3\Debug.win32\DemoGame.win32.lib" /MACHINE:X86 Debug.win32\AppDelegate.obj
+         Debug.win32\HelloWorldScene.obj
+         Debug.win32\SneakyButton.obj
+         Debug.win32\SneakyButtonSkinnedBase.obj
+         Debug.win32\SneakyJoystick.obj
+         Debug.win32\SneakyJoystickSkinnedBase.obj
+         Debug.win32\Bullet.obj
+         Debug.win32\BulletManager.obj
+         Debug.win32\Controller.obj
+         Debug.win32\Entity.obj
+         Debug.win32\GameManager.obj
+         Debug.win32\GameMenu.obj
+         Debug.win32\GameOver.obj
+         Debug.win32\GameScene.obj
+         Debug.win32\GameSceneBgLayer.obj
+         Debug.win32\GameScenePlayLayer.obj
+         Debug.win32\JoystickController.obj
+         Debug.win32\KeyboardController.obj
+         Debug.win32\main.obj
+         Debug.win32\Monster.obj
+         Debug.win32\MonsterManager.obj
+         Debug.win32\Player.obj
+         Debug.win32\SimpleMoveController.obj
+         Debug.win32\SneakyInputEx.obj
+         Debug.win32\SoundManager.obj
+         Debug.win32\System.obj
+         DemoGame.win32.vcxproj -> F:\cocos2d-2.0-x-2.0.3\Debug.win32\DemoGame.win32.exe
+     1>Done Building Project "F:\cocos2d-2.0-x-2.0.3\DemoGame\proj.win32\DemoGame.win32.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:02.40
+Time Elapsed 00:00:05.08

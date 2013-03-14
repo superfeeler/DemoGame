@@ -14,6 +14,7 @@ SneakyJoystickSkinnedBase *SneakyInputEx::joystickSkinnedBase(CCRect padRect, co
 		joystickBase->init();
 		joystickBase->setBackgroundSprite(CCSprite::createWithSpriteFrameName(bgSprite));
 		joystickBase->setThumbSprite(CCSprite::createWithSpriteFrameName(thumbSprite));
+		
 
 		SneakyJoystick *joystick = new SneakyJoystick();
 		
@@ -21,8 +22,11 @@ SneakyJoystickSkinnedBase *SneakyInputEx::joystickSkinnedBase(CCRect padRect, co
 		{
 			joystick->autorelease();
 			joystick->initWithRect(padRect);
-
-			joystickBase->addChild(joystick);
+			joystick->setAutoCenter(true);
+			joystick->setHasDeadzone(true);
+			joystick->setDeadRadius(10);
+			
+			joystickBase->setJoystick(joystick);
 			return joystickBase;
 		}
 		joystickBase->release();

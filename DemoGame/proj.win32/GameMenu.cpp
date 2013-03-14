@@ -31,6 +31,7 @@ bool GameMenu::init()
 		CC_BREAK_IF(!bg);
 
 		bg->setPosition(ccp(size.width / 2, size.height / 2));
+		bg->setScale(1.6);
 		this->addChild(bg);
 
 		CCLabelTTF* pLabel = CCLabelTTF::create("Main Menu", "Arial", 30);
@@ -48,7 +49,18 @@ bool GameMenu::init()
 
 		pPlayItem->setPosition(ccp(size.width/2, size.height/2));
 
-		CCMenu *pMenu = CCMenu::create(pPlayItem, NULL);
+
+		pLabel = CCLabelTTF::create("Exit", "Arial", 24);
+		CC_BREAK_IF(!pLabel);
+		
+		CCMenuItemLabel *pExitItem = CCMenuItemLabel::create(
+			pLabel, this, menu_selector(GameMenu::menuExitCallback));
+		CC_BREAK_IF(!pExitItem);
+
+		pExitItem->setPosition(ccp(size.width/2, size.height/2 - 40));
+
+
+		CCMenu *pMenu = CCMenu::create(pPlayItem, pExitItem, NULL);
 		pMenu->setPosition(CCPointZero);
 		CC_BREAK_IF(!pMenu);
 
@@ -62,4 +74,12 @@ bool GameMenu::init()
 void GameMenu::menuPlayCallback(CCObject* pSender) 
 {
 	GameManager::sharedGameManager()->runSceneWithId(GameManager::SCENE_PLAY);
+}
+
+void GameMenu::menuExitCallback(CCObject* pSender)
+{
+	CCDirector::sharedDirector()->end();
+#if(CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+	exit(0);
+#endif
 }

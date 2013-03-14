@@ -1,6 +1,7 @@
 #include "main.h"
 #include "AppDelegate.h"
 #include "CCEGLView.h"
+#include "Constants.h"
 
 USING_NS_CC;
 
@@ -25,7 +26,7 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
     // create the application instance
     AppDelegate app;
     CCEGLView* eglView = CCEGLView::sharedOpenGLView();
-    eglView->setFrameSize(480, 320);
+    eglView->setFrameSize(ANDROID_G7_WIDTH, ANDROID_G7_HEIGHT);
 
     int ret = CCApplication::sharedApplication()->run();
 

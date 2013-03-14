@@ -19,9 +19,11 @@ private:
 
 	cocos2d::CCSprite* mBg1;
 	cocos2d::CCSprite* mBg2;
+	cocos2d::CCSprite* mBg3;
 
 	float mX1;
 	float mX2;
+	float mX3;
 	float mSpeed;
 };
 

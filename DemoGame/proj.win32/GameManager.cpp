@@ -3,6 +3,7 @@
 #include "System.h"
 #include "GameMenu.h"
 #include "GameScene.h"
+#include "GameOver.h"
 
 using namespace cocos2d;
 
@@ -40,7 +41,7 @@ bool GameManager::init()
 		}
 		else
 		{
-			CCDirector::sharedDirector()->enableRetinaDisplay(true);
+			//CCDirector::sharedDirector()->enableRetinaDisplay(true);
 			cache->addSpriteFramesWithFile("images.plist", "images.png");
 		}
 		bRet = true;
@@ -67,6 +68,9 @@ void GameManager::runSceneWithId(SceneId id)
 	case SCENE_PLAY:
 		newScene = GameScene::create();
 		break;
+	case SCENE_GAMEOVER:
+		newScene = GameOver::scene();
+
 	}
 
 	if (newScene)

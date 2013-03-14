@@ -10,6 +10,8 @@ public:
 
 	virtual void menuPlayCallback(CCObject* pSender);
 
+	virtual void menuExitCallback(CCObject* pSender);
+
 	CREATE_FUNC(GameMenu);
 };
 

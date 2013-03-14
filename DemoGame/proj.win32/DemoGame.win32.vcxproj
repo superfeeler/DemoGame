@@ -124,13 +124,28 @@
     <ClInclude Include="..\Classes\SneakyInput\SneakyButtonSkinnedBase.h" />
     <ClInclude Include="..\Classes\SneakyInput\SneakyJoystick.h" />
     <ClInclude Include="..\Classes\SneakyInput\SneakyJoystickSkinnedBase.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="BulletManager.h" />
+    <ClInclude Include="Collision.h" />
+    <ClInclude Include="Constants.h" />
+    <ClInclude Include="Controller.h" />
+    <ClInclude Include="Entity.h" />
     <ClInclude Include="GameManager.h" />
     <ClInclude Include="GameMenu.h" />
+    <ClInclude Include="GameOver.h" />
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="GameSceneBgLayer.h" />
+    <ClInclude Include="GameScenePlayLayer.h" />
+    <ClInclude Include="JoystickController.h" />
+    <ClInclude Include="KeyboardController.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="Monster.h" />
+    <ClInclude Include="MonsterManager.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="SimpleMoveController.h" />
     <ClInclude Include="SneakyInputEx.h" />
+    <ClInclude Include="SoundManager.h" />
     <ClInclude Include="System.h" />
   </ItemGroup>
   <ItemGroup>
@@ -140,12 +155,25 @@
     <ClCompile Include="..\Classes\SneakyInput\SneakyButtonSkinnedBase.cpp" />
     <ClCompile Include="..\Classes\SneakyInput\SneakyJoystick.cpp" />
     <ClCompile Include="..\Classes\SneakyInput\SneakyJoystickSkinnedBase.cpp" />
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="BulletManager.cpp" />
+    <ClCompile Include="Controller.cpp" />
+    <ClCompile Include="Entity.cpp" />
     <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="GameMenu.cpp" />
+    <ClCompile Include="GameOver.cpp" />
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="GameSceneBgLayer.cpp" />
+    <ClCompile Include="GameScenePlayLayer.cpp" />
+    <ClCompile Include="JoystickController.cpp" />
+    <ClCompile Include="KeyboardController.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Monster.cpp" />
+    <ClCompile Include="MonsterManager.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="SimpleMoveController.cpp" />
     <ClCompile Include="SneakyInputEx.cpp" />
+    <ClCompile Include="SoundManager.cpp" />
     <ClCompile Include="System.cpp" />
   </ItemGroup>
   <ItemGroup>
